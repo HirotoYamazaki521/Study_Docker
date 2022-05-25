@@ -4,8 +4,8 @@ services:
     image: mariadb:10.4
     container_name: "laravel-db"
     volumes:
-      - ./data:/var/lib/mariadb
-      - ./db/my.cnf:/etc/mariadb/conf.d/my.cnf
+      - ./data:/var/lib/mysql
+      - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel
